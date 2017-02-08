@@ -73,7 +73,6 @@
 // Site Footer
 
 .site-footer {
-  border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
   height: auto;
   bottom: 0;
@@ -95,7 +94,7 @@
 
 .footer-col-wrapper {
   color: $text-color;
-  font-size: 15px;
+  font-size: $base-font-size / 1.25;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }
