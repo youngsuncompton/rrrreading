@@ -12,6 +12,7 @@ ul, ol, dl, figure,
   font-size: $base-font-size * 3;
   letter-spacing: -1.5px;
   margin-bottom: 0;
+  margin-left: -#{$spacing-unit};
   padding: 0 $spacing-unit 0 0;
   position: fixed;
   text-align: center;
@@ -98,6 +99,6 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
