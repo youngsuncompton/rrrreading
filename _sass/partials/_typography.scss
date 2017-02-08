@@ -8,13 +8,14 @@ ul, ol, dl, figure,
 
 .site-title {
   background-color:$background-color;
+  font-family: $accent-font;
   font-size: $base-font-size * 3;
   letter-spacing: -1.5px;
   margin-bottom: 0;
-  position: fixed;
-  width: 100%;
-  text-align: center;
   padding: 0 $spacing-unit 0 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
 
   &,
   &:visited {
@@ -53,7 +54,13 @@ body {
 
 }
 
+.site-footer {
+  font-family: $accent-font;
+}
 
+.site-footer a{
+  font-family: $base-font-family;
+}
 
 
 // Lists
