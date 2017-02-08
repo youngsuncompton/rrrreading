@@ -1,0 +1,24 @@
+---
+layout: default
+title: home
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">My design practice consists of reading things and thinking about them in relation to others that I have read.</p>&mdash; y s c (@yscompton) <a href="https://twitter.com/yscompton/status/766057869171130369">August 17, 2016</a></blockquote>
+<!-- <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->

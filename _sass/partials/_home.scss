@@ -1,0 +1,46 @@
+.home p {
+  font-size: $base-font-size * 2;
+  letter-spacing: -1px;
+  margin-bottom: $spacing-unit * 2;
+  text-align: left;
+}
+
+// Page Content
+
+.page-content {
+  padding: ($spacing-unit * 2) 0;
+}
+
+.page-heading {
+  font-size: 20px;
+}
+
+.post-list {
+  letter-spacing: -1px;
+  list-style: none;
+  margin-left: 0;
+  > li {
+    margin-bottom: $spacing-unit;
+
+  }
+}
+
+.post-link {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+// Mobile
+
+@include media-query($on-palm) {
+  .home p {
+    font-size: $base-font-size * 1.25;
+    letter-spacing: normal;
+  }
+  .post-list a{
+    font-size: $base-font-size * 1.25;
+    letter-spacing: normal;
+  }
+
+}

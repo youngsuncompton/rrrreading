@@ -1,0 +1,96 @@
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+
+.site-title {
+  background-color:$background-color;
+  font-size: $base-font-size * 3;
+  letter-spacing: -1.5px;
+  margin-bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 0 $spacing-unit 0 0;
+
+  &,
+  &:visited {
+    color: $text-color;
+  }
+}
+
+.site-title {
+  text-decoration: none;
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+
+@include media-query($on-palm) {
+  .site-title {
+    font-size: $base-font-size * 2;
+    letter-spacing: normal;
+  }
+}
+
+
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+
+}
+
+
+
+
+// Lists
+
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+
+// Headings
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $base-font-weight;
+  text-align: left;
+}
+
+
+// Links
+
+a {
+  color: $text-color;
+  text-decoration: none;
+
+  &:visited {
+    // color: darken($text-color, 15%);
+    color: $text-color;
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
